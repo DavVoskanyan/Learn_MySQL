@@ -1,0 +1,8 @@
+
+create table department(dpid int(1) auto_increment primary key, dpName varchar(30));
+
+create table worker(wrkid int(2) auto_increment primary key, name varchar(10), srName varchar(15), age int(2), salary int(6), workDp int(1), shift int(2));
+
+create table products(prdid int(4) auto_increment primary key, name varchar(20), producer varchar(15), price int(6));
+
+create table delivery(date date, department int(1));
